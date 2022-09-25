@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bypass Paywalls Options</title>
+    <link rel="stylesheet" href="../css/popup.css" />
+  </head>
+  <body>
+    <div id="tabs">
+      <button data-pane="rule" class="tab-cell">Redirect Rule</button>
+      <button data-pane="sites" class="tab-cell">Supported Sites</button>
+      <button data-pane="custom" class="tab-cell">Custom Sites</button>
+    </div>
+
+    <div id="rule" class="pane">
+      <!-- <label id="select-all"><input checked type="checkbox"><em>Select all/none</em></label>
+      <div id='proxy_sites'></div> -->
+        <fieldset>
+          <legend>Select redirect mode:</legend>
+          <div>
+            <input type="radio" id="redirect_mode_2" name="redirect_mode" value="0" checked>
+            <label for="redirect_mode_2">Append Prefix</label>
+          </div>
+          <div>
+            <input type="radio" id="redirect_mode_1" name="redirect_mode" value="1">
+            <label for="redirect_mode_1">Modify Host</label>
+          </div>
+          <p>
+            Append Prefix: "aaa.bb.cc/path" will be changed to "[proxy prefix]aaa.bbb.ccc/path".
+          </p>
+          <p>
+            Modify Host: "aaa.bb.cc/path" will be changed to "aaa-bb-cc.[proxy host]/path". Does not work on http.
+          </p>
+      </fieldset>
+      <p>
+        Specify the reverse proxy prefix or host suffix:
+      </p>
+      <input id="proxy_suffix" placeholder="e.g.,&#10;eproxy.lib.hku.hk" /></input>
+      <p>
+        See more at https://libproxy-db.org/
+      </p>
+    </div>
+
+    <div id="sites" class="pane">
+      <p>
+        <span style="color: #900; font-weight: bold">Uncheck sites that are not supported by the proxy server to avoid errors.</span>
+      </p>
+      <label id="select-all"><input checked type="checkbox"><em>Select all/none</em></label>
+      <div id='proxy_sites'></div>
+    </div>
+  
+    <div id="custom" class="pane">
+      <p>
+        Additional sites.
+      </p>
+      <textarea id="custom_sites" placeholder="e.g.,&#10;www.nature.com" /></textarea>
+    </div>
+  
+    <div id="controls">
+      <div id="status"></div>
+      <button id="save">Save</button>
+    </div>
+
+    <script src="../js/constants.js"></script>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>
