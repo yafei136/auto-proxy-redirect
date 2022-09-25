@@ -1,4 +1,4 @@
-# Auto Redirect Proxy
+# Auto Proxy Redirect
 
 A Chrome extension that automatically redirects scholarly database websites through EZProxy provided by the university.
 
