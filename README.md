@@ -4,7 +4,7 @@ A Chrome extension that automatically redirects scholarly database websites thro
 
 ## Getting started
 
-To begin, simply select "**Append Prefix**" and put the redirection url (see https://libproxy-db.org/) prefix in the "Redirection Rule" tab. **Click "save" and wait until the pop-up window closes automatically**
+To begin, simply select "**Append Prefix**" and put the redirection url (see https://libproxy-db.org/) prefix in the "Redirection Rule" tab. **Click "save" and wait until the pop-up window closes automatically. DONOT click outside the pop-up window to close the window. It will not save the changes.** 
 
 ## Detailed explanation
 
